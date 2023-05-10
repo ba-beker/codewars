@@ -25,7 +25,7 @@ function countSmileys(arr) {
   let count = 0;
 
   for (let i = 0; i < arr.length; i++) {
-    if (validSmileys.some(pattern => pattern.test(arr[i]))) {
+    if (validSmileys.some(pattern => pattern.test(arr[i]))) { 
       count++;
     }
   }
