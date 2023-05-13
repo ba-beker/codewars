@@ -20,6 +20,6 @@ function isIsogram(str){
 	  }
 	  letters[char] = true;
 	}
-  
+	
 	return true;
   }
