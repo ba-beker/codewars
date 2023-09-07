@@ -70,3 +70,4 @@ var merge = function(nums1, m, nums2, n) {
       k--;
     }
   };
+Remove the minimum
