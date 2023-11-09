@@ -13,4 +13,3 @@ function getChar(number) {
   } else {
     return "Invalid input: Number should be in the range 0 to 127 (ASCII range).";
   }
-}
