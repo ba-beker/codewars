@@ -1,0 +1,58 @@
+// /**
+//  * @param {number[]} nums
+//  * @return {number}
+//  */
+// var removeDuplicates = function(nums) {
+//     // Check if the array is empty or has only one element
+//     if (nums.length <= 1) {
+//         return nums.length;
+//     }
+
+//     // Initialize a pointer to keep track of the position to overwrite duplicates
+//     let uniquePointer = 0;
+
+//     // Iterate through the array starting from the second element
+//     for (let i = 1; i < nums.length; i++) {
+//         // Compare the current element with the one before it
+//         if (nums[i] !== nums[uniquePointer]) {
+//             // If not a duplicate, move the unique pointer and update the array
+//             uniquePointer++;
+//             nums[uniquePointer] = nums[i];
+//         }
+//         // If it's a duplicate, continue to the next element
+//     }
+
+//     // The uniquePointer now represents the last index of the unique elements
+//     // Return the count of unique elements (length of the unique subarray)
+//     return uniquePointer + 1;
+// };
+
+// The solution
+/**
+ * @param {number[]} nums
+ * @return {number}
+ */
+var removeDuplicates = function (nums) {
+  // Check if the array is empty or has only one element
+  if (nums.length <= 1) {
+    return nums.length;
+  }
+
+  // Initialize a pointer to keep track of the position to overwrite duplicates
+  let uniquePointer = 0;
+
+  // Iterate through the array starting from the second element
+  for (let i = 1; i < nums.length; i++) {
+    // Compare the current element with the one before it
+    if (nums[i] !== nums[uniquePointer]) {
+      // If not a duplicate, move the unique pointer and update the array
+      uniquePointer++;
+      nums[uniquePointer] = nums[i];
+    }
+    // If it's a duplicate, continue to the next element
+  }
+
+  // The uniquePointer now represents the last index of the unique elements
+  // Return the count of unique elements (length of the unique subarray)
+  return uniquePointer + 1;
+};
