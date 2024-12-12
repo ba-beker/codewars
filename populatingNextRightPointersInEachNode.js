@@ -66,3 +66,7 @@ var connect = function (root) {
 
   return root;
 };
+
+
+let username = '';
+username ||= 'Guest'; // Sets 'Guest' because username is ''
